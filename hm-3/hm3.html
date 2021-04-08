@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Задание 1
+        let n = 100;
+        let i;
+        let j;
+        sn:
+        for (i = 2; i <= n; i++) {
+            for (j = 2; j < i; j++) {
+                if (i % j == 0)
+                    continue sn
+            }
+            console.log(i)
+        }
+
+
+
+        //Задание 2
+
+        let basket = [
+            {
+                product: "1",
+                price: (30, 40)
+            },
+            {
+                product: "2",
+                price: (40, 80)
+            },
+            {
+                product: "3",
+                price: (55, 60)
+            },
+            {
+                product: "4",
+                price: (100)
+            }
+        ];
+        let basketPrice = 0;
+        for (let prod of basket) {
+            basketPrice += prod.price;
+            console.log(prod.price);
+        }
+
+        console.log(basketPrice);
+
+        //Задание 3
+
+        function countBasketPrice(basket) {
+            let funBasketPrice = 0;
+            for (let prod of basket) {
+                funBasketPrice += prod.price;
+            }
+            return funBasketPrice;
+        }
+
+        console.log(countBasketPrice(basket));
+
+
+        //Задание 4
+        for (let i = 0; i < 10; console.log(i++)) { }
+
+        //Задание 5
+        let r = 'x';
+        for (let i = 0; i < 20; i++) {
+            console.log(r);
+            r += 'x';
+        }
+
+    </script>
+
+</body>
+
+</html>
